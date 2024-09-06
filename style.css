@@ -1,3 +1,4 @@
+/* Custom font from other website */
 @font-face {
     font-family: Calibre-Font-Light;
     src: url(/Fonts/TestCalibre-Light.otf);
@@ -45,4 +46,58 @@ h1, p {
     top: 50%;
     left: 50%;
     transform: translate(-90%, 50%);
+    margin-top: -600px;
+    color: #F79431;
+}
+
+.placeholder {
+    font-weight: 500;
+    font-size: 24px;
+    outline: #000;
+}
+
+.hook {
+    font-size: 96px;
+    font-weight: 600;
+}
+
+.hero-image {
+    opacity: 55%;
+}
+/* Navigation Menu */
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background: none;
+    background-color: #fff;
+    display: block;
+}
+
+.nav-links {
+    float: right;
+}
+
+.nav-page {
+    position: relative;
+    padding: 8px;
+    color: #000;
+    text-decoration: none;
+    margin-top: -70px;
+    font-size: 20px;
+}
+
+.menu {
+    padding: 70px;
+}
+
+.nav-page {
+    margin-right: 90px;
+}
+
+/* Product links */
+
+.product-link {
+    border-radius: 50%;
+    margin-right: 50px;
 }
