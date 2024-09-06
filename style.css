@@ -1,0 +1,39 @@
+@font-face {
+    font-family: Calibre-Font-Light;
+    src: url(/Fonts/TestCalibre-Light.otf);
+}
+
+@font-face {
+    font-family: Calibre-Font-Regular;
+    src: url(/Fonts/TestCalibre-Regular.otf);
+}
+
+@font-face {
+    font-family: Calibre-Font-Medium;
+    src: url(/Fonts/TestCalibre-Medium.otf);
+}
+
+@font-face {
+    font-family: Calibre-Font-Semibold;
+    src: url(/Fonts/TestCalibre-Semibold.otf);
+}
+
+@font-face {
+    font-family: Calibre-Font-Bold;
+    src: url(/Fonts/TestCalibre-Bold.otf);
+}
+
+
+*{
+    font-family: 'Calibre', sans-serif;
+    
+}
+
+h1, p {
+    text-align: left;
+    
+}
+
+.hero-bg-image {
+    background: url(Image/fog-8208493_1920.jpg);
+}
