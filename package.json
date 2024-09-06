@@ -1,0 +1,18 @@
+{
+  "name": "lubiel-trading-corp",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "lubiel-trading-corp"
+  },
+  "author": "Dale",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "resend": "^4.0.0"
+  }
+}
