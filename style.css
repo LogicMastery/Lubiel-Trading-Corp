@@ -85,6 +85,7 @@ h1, p {
     text-decoration: none;
     margin-top: -70px;
     font-size: 20px;
+    text-transform: uppercase;
 }
 
 .menu {
@@ -100,7 +101,7 @@ h1, p {
     position: absolute;
     bottom: -2px;
     height: 4px;
-    width: 80%;
+    width: 90%;
     background: #F79431;
     border-radius: 50px;
     transform: scale(0);
@@ -108,6 +109,10 @@ h1, p {
 }
 
 .nav-page:hover::before {
+    transform: scale(1);
+}
+
+.nav-page:active::before {
     transform: scale(1);
 }
 
