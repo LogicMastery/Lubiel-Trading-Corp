@@ -95,9 +95,30 @@ h1, p {
     margin-right: 90px;
 }
 
+.nav-page::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    height: 4px;
+    width: 80%;
+    background: #F79431;
+    border-radius: 50px;
+    transform: scale(0);
+    transition: transform 0.2s linear;
+}
+
+.nav-page:hover::before {
+    transform: scale(1);
+}
+
 /* Product links */
 
 .product-link {
     border-radius: 50%;
     margin-right: 50px;
+}
+
+.fa-regular fa-city {
+    width: 50px;
+    height: 50px;
 }
