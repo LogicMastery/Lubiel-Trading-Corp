@@ -46,14 +46,13 @@ h1, p {
     top: 50%;
     left: 50%;
     transform: translate(-90%, 50%);
-    margin-top: -600px;
+    margin-top: -700px;
     color: #F79431;
 }
 
 .placeholder {
-    font-weight: 500;
-    font-size: 24px;
-    outline: #000;
+    font-weight: 200;
+    font-size: 30px;
 }
 
 .hook {
@@ -62,7 +61,8 @@ h1, p {
 }
 
 .hero-image {
-    opacity: 55%;
+    opacity: 70%;
+    background: #000;
 }
 /* Navigation Menu */
 .menu {
@@ -93,7 +93,7 @@ h1, p {
 }
 
 .nav-page {
-    margin-right: 90px;
+    margin-right: 70px;
 }
 
 .nav-page::before {
@@ -101,18 +101,19 @@ h1, p {
     position: absolute;
     bottom: -2px;
     height: 4px;
-    width: 90%;
+    width: 110%;
     background: #F79431;
     border-radius: 50px;
     transform: scale(0);
     transition: transform 0.2s linear;
+    margin-left: -12px;
 }
 
 .nav-page:hover::before {
     transform: scale(1);
 }
 
-.nav-page:active::before {
+.nav-page:active{
     transform: scale(1);
 }
 
@@ -138,3 +139,43 @@ fa-solid fa-city
 {
     align-items: left;
 }
+
+/* Section - about the website contents */
+.heading-section-1 {
+    width: 540px;
+    height: 138px;
+    font-size: 40px;
+    font-weight: 500;
+    color: #F79431;
+    margin-top: -20%;
+    margin-left: -15%;
+}
+
+.description-section-1 {
+    width: 570px;
+    height: 173px;
+    font-size: 30px;
+    color: #F79431;
+    font-weight: 200;
+    margin-left: -15%;
+}
+
+.heading-section-2 {
+    width: 600px;
+    height: 120px;
+    font-size: 40px;
+    font-weight: 500;
+    color: #F79431;
+    margin-top: -15%;
+    margin-left: -20%;
+}
+
+.description-section-2 {
+    width: 580px;
+    height: 115px;
+    font-size: 30px;
+    color: #F79431;
+    font-weight: 200;
+    margin-left: -20%;
+}
+
