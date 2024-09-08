@@ -214,3 +214,53 @@ fa-solid fa-city
     color: #ffff;
     margin-right: -10%;
 }
+
+/* company hero section */
+.company-headline {
+    font-size: 96px;
+    font-weight: 600;
+    color: #F79431;
+    width: 375px;
+    height: 97px;
+    margin-left: -10%;
+}
+
+.company-description {
+    font-weight: 200;
+    font-size: 30px;
+    color: #F79431;
+    width: 815px;
+    height: 266;
+    margin-top: -10%;
+    margin-left: -10%;
+}
+
+/* contact hero section */
+.contact-headline {
+    font-size: 96px;
+    font-weight: 700;
+    color: #F79431;
+    width: 530px;
+    height: 95px;
+    margin-left: 10%;
+}
+
+.contact-description {
+    font-size: 20px;
+    font-weight: 200;
+    color: #F79431;
+    width: 580px;
+    height: 98;
+    margin-top: -5%;
+    margin-left: 10%;
+}
+
+.contact-img {
+    border-radius: 15%
+
+}
+
+.contact-bg-color {
+    background: rgb(0,0,128);
+    background: linear-gradient(90deg, rgba(0,0,128,1) 30%, rgba(2,0,36,1) 77%); 
+}
