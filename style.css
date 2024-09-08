@@ -179,3 +179,38 @@ fa-solid fa-city
     margin-left: -20%;
 }
 
+/* Footer Menu Style */
+.end-menu {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.bottom-menu {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #000080;
+    color: #ffff;
+    text-align: left;
+}
+
+.copyright-logo {
+    text-align: center;
+    font-size: 15px;
+}
+
+.footer-links, .footer-page {
+    font-size: 20px;
+    text-decoration: none;
+    color: #ffffffd1;
+    margin-right: -10%;
+}
+
+.footer-logo {
+    font-size: 30px;
+    text-decoration: none;
+    color: #ffff;
+    margin-right: -10%;
+}
