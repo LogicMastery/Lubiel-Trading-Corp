@@ -120,10 +120,10 @@ h1, p {
 
 .product-link {
     border-radius: 50%;
-    margin-right: 50px;
+    margin-right: 90px;
 }
 
-.fa-regular fa-city {
-    width: 50px;
-    height: 50px;
+fa-solid fa-city
+{
+    align-items: left;
 }
