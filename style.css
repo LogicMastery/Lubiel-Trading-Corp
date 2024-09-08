@@ -123,6 +123,17 @@ h1, p {
     margin-right: 90px;
 }
 
+.product-link {
+    width: 60%;
+}
+
+.product-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -50px;
+}
+
 fa-solid fa-city
 {
     align-items: left;
