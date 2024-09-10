@@ -14,6 +14,11 @@ body {
     padding: 20px;
 }
 
+/* Container for the responsive website */
+.container {
+    width: 100%;
+    height: auto;
+}
 /* Hero Section */
 .hero-section {
     position: relative;
@@ -79,6 +84,10 @@ body {
 }
 
 .nav-page:hover::before {
+    transform: scale(1);
+}
+
+.nav-page.active::before {
     transform: scale(1);
 }
 
@@ -150,8 +159,9 @@ body {
     border-radius: 10px;
     width: 340px;
     height: 459px;
+    top: 40%;
     left: 40%;
-    transform: translate(120%);
+    transform: translate(50%, 10%);
 }
 
 .contact-text-content {
@@ -227,7 +237,7 @@ body {
 }
 
 /* Responsive Design */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1158px) {
     .hook {
         font-size: 2rem;
     }
@@ -247,8 +257,49 @@ body {
     .contact-image {
         width: 340px;
         height: 459px;
+        top: 40%;
         left: 40%;
-        transform: translate(-90%);
+        transform: translate(70%, -10%);
+    }
+    .company-image {
+        width: 460px;
+        height: 398px;
+        left: 40%;
+        transform: translate(-10%); 
+    }
+
+    .heading-section-1, .heading-section-2, .heading-company {
+        font-size: 1.5rem;
+    }
+
+    .description-section-1, .description-section-2, .description-company {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .hook {
+        font-size: 2rem;
+    }
+
+    .placeholder {
+        font-size: 1rem;
+    }
+
+    .product-link {
+        width: 60%;
+    }
+
+    .section, .contact-section, .company-section {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-image {
+        width: 340px;
+        height: 459px;
+        top: 40%;
+        left: 40%;
+        transform: translate(-43%, -20%);
     }
     .company-image {
         width: 460px;
