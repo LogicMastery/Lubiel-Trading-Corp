@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-    <title>Landing page</title>
+    <script src="send-email.js" defer></script>
+    <script src="app.js" defer></script>
+    <title>Lubiel Trading - Contact</title>
 </head>
 <body>
     <header>
         <nav>
             <ul class="menu">
-                <li class="nav-links"><a href="contact.html" class="nav-page">Contact</a></li>
-                <li class="nav-links"><a href="accreditation.html" class="nav-page">Accreditation</a></li>
-                <li class="nav-links"><a href="company.html" class="nav-page">Company</a></li>
                 <li class="nav-links"><a href="index.html" class="nav-page">Home</a></li>
+                <li class="nav-links"><a href="company.html" class="nav-page">Company</a></li>
+                <li class="nav-links"><a href="accreditation.html" class="nav-page">Accreditation</a></li>
+                <li class="nav-links"><a href="contact.html" class="nav-page">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -25,13 +26,25 @@
                 <p class="description-contact">Lorem ipsum dolor sit amet consectetur. Duis feugiat at vitae rutrum. Et ac lectus felis laoreet odio massa mi accumsan. In risus pellentesque risus a feugiat magna sollicitudin. Porttitor convallis morbi bibendum sollicitudin neque urna duis.</p>
             </div>
             <div class="contact-image">
-                <img src="Image/woman-4702060_1920.jpg" alt="Contact Image 1">
+                <img src="images/woman-4702060_1920.jpg" alt="Contact Image 1">
             </div>
             <br>
                 <br>
                     <br>
                         <br>
-        </div>
+
+                        
+                    </div>
+                    <div class="contact-container">
+                        <form method="get">
+                            <input type="email" name="email" id="send-mail" placeholder="Email"> <br>
+                            <input type="text" id="name" name="name" placeholder="Name"> <br>
+                            <textarea name="message" id="write-message" placeholder="Message" cols="30" rows="10"></textarea> <br>
+                            <input type="submit" value="SEND" onclick="Send()" id="send">
+                            
+                        </form>
+                    
+                        </div>               
 
     </div>
     <!-- Footer -->

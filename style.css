@@ -53,12 +53,15 @@ body {
 
 /* Navigation Menu */
 .menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: flex-end;
-    padding: 50px;
-    background-color: #fff;
 }
-
+.menu {
+    padding: 3%
+}
 .nav-links {
     margin-left: 150px;
 }
