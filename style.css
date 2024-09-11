@@ -183,6 +183,63 @@ body {
     font-weight: 200;
 }
 
+/* Contact form */
+.contact-container {
+    width: 580px;
+    height: 631px;
+    border-radius: 35px;
+    background: rgb(0,0,128);
+    background: linear-gradient(90deg, rgba(0,0,128,1) 30%, rgba(2,0,36,1) 92%); 
+    right: 40%;
+    transform: translate(30%);
+    padding: 25px;
+}
+
+#send-mail, #name {
+    width: 556px;
+    height: 55px;
+    border-radius: 50px;
+    border: 1px solid #767693;
+    color: #ffff;
+    background: rgb(0,0,128);
+    background: linear-gradient(90deg, rgba(0,0,128,1) 30%, rgba(2,0,36,1) 92%); 
+    padding: 5px;
+}
+
+#write-message {
+    border-radius: 23px;
+    border: 1px solid #767693;
+    color: #ffff;
+    background: rgb(0,0,128);
+    background: linear-gradient(90deg, rgba(0,0,128,1) 30%, rgba(2,0,36,1) 92%); 
+    resize: none;
+    padding: 10px;
+}
+
+#send {
+    width: 180px;
+    height: 42px;
+    background: #0000D5;
+    padding: 10px;
+    border-radius: 40px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #F79431;
+    border: none;
+    
+}
+
+.contact-title {
+    font-size: 40px;
+    font-weight: 500;
+    color: #F79431;
+}
+
+.contact-description {
+    font-size: 20px;
+    font-weight: 200;
+    color: #F79431;
+}
 /* Company Section */
 .company-section {
     display: grid;

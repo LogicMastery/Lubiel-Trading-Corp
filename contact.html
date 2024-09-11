@@ -36,16 +36,21 @@
                         
                     </div>
                     <div class="contact-container">
-                        <form method="get">
-                            <input type="email" name="email" id="send-mail" placeholder="Email"> <br>
-                            <input type="text" id="name" name="name" placeholder="Name"> <br>
-                            <textarea name="message" id="write-message" placeholder="Message" cols="30" rows="10"></textarea> <br>
+                        <form method="get" class="contact-form">
+                            <label for="contact-title" class="contact-title">Get In Touch!</label><br>
+                            <label for="contact-description" class="contact-description">Lorem ipsum dolor sit amet consectetur. Bibendum viverra ornare arcu ac feugiat consequat.</label><br><br>
+                            <input type="email" name="email" id="send-mail" placeholder="Email" required> <br><br>
+                            <input type="text" id="name" name="name" placeholder="Name" required> <br><br>
+                            <textarea name="message" id="write-message" placeholder="Message" cols="70" rows="12" required></textarea> <br><br>
                             <input type="submit" value="SEND" onclick="Send()" id="send">
                             
                         </form>
                     
                         </div>               
-
+                    
+                        <div>
+                            <p>random stuff</p>
+                        </div>
     </div>
     <!-- Footer -->
     <footer class="bottom-menu">
