@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="send-email.js" defer></script>
     <script src="app.js" defer></script>
     <title>Lubiel Trading - Contact</title>
 </head>
@@ -19,8 +18,8 @@
             </ul>
         </nav>
     </header>
-    <div class="container">
-        <div class="contact-section">
+    <menu class="container">
+        <menu class="contact-section">
             <div class="contact-text-content">
                 <h1 class="heading-contact">Contact Us</h1>
                 <p class="description-contact">Lorem ipsum dolor sit amet consectetur. Duis feugiat at vitae rutrum. Et ac lectus felis laoreet odio massa mi accumsan. In risus pellentesque risus a feugiat magna sollicitudin. Porttitor convallis morbi bibendum sollicitudin neque urna duis.</p>
@@ -32,30 +31,24 @@
                 <br>
                     <br>
                         <br>
-
-                        
-                    </div>
+        </menu>
                     <div class="contact-container">
-                        <form method="get" class="contact-form">
-                            <label for="contact-title" class="contact-title">Get In Touch!</label><br>
-                            <label for="contact-description" class="contact-description">Lorem ipsum dolor sit amet consectetur. Bibendum viverra ornare arcu ac feugiat consequat.</label><br><br>
+                        <form method="post" id="contact-form">
+                            <label for="contact-title" id="contact-title">Get In Touch!</label><br>
+                            <label for="contact-description" id="contact-description">Lorem ipsum dolor sit amet consectetur. Bibendum viverra ornare arcu ac feugiat consequat.</label><br><br>
                             <input type="email" name="email" id="send-mail" placeholder="Email" required> <br><br>
                             <input type="text" id="name" name="name" placeholder="Name" required> <br><br>
                             <textarea name="message" id="write-message" placeholder="Message" cols="70" rows="12" required></textarea> <br><br>
-                            <input type="submit" value="SEND" onclick="Send()" id="send">
+                            <button type="submit" onclick="submit()" id="send">SUBMIT</button>
                             
                         </form>
                     
-                        </div>               
-                    
-                        <div>
-                            <p>random stuff</p>
-                        </div>
-    </div>
+                    </div>               
+    </menu>
     <!-- Footer -->
     <footer class="bottom-menu">
         <ul class="end-menu">
-            <li class="footer-logo">Logo Name</li><br>
+            <li class="footer-logo">Logo Name<br></li>
             <li class="footer-links"><a href="" class="footer-page">Company</a></li>
             <li class="footer-links"><a href="" class="footer-page">Accreditation</a></li>
             <li class="footer-links"><a href="" class="footer-page">Contact</a></li>

@@ -229,13 +229,13 @@ body {
     
 }
 
-.contact-title {
+#contact-title {
     font-size: 40px;
     font-weight: 500;
     color: #F79431;
 }
 
-.contact-description {
+#contact-description {
     font-size: 20px;
     font-weight: 200;
     color: #F79431;
