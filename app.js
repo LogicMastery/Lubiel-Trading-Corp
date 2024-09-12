@@ -26,7 +26,7 @@ if(contactForm && email && name && messages){
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({ key: 'value' })
+            body: JSON.stringify(formData)
         })
         .then(response => response.json())
         .then(data => console.log(data))

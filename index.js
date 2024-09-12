@@ -1,18 +1,9 @@
-// Send email data
-let mailOption = {
-  from: 'your-email@gmail.com',
-  to: 'recipient-email@gmail.com',
-  subject: 'Test-Subject',
-  text: 'This is a plain text email'
-};
+import { createTransport } from "nodemailer";
 
-nodemailer = require('nodemailer');
-
-// Resend API Information
-const transporter = nodemailer.createTransport({
+const transporter = createTransport({
   host: "smtp.resend.com",
   port: 465,
-  secure: true, // true for port 465, false for other ports
+  secure: true,
   auth: {
     user: "resend",
     pass: "re_2MXp5V7S_kes55REoWUFysR13gq3Nb2hU",
@@ -20,10 +11,10 @@ const transporter = nodemailer.createTransport({
 });
 
 // async..await is not allowed in global scope, must use a wrapper
-async function Email() {
+async function SendMail() {
   // send mail with defined transport object
   const info = await transporter.sendMail({
-    from: '"OnBoarding" <delivered@resend.dev>', // sender address
+    from: '"Maddison Foo Koch 👻" <delivered@resend.dev>', // sender address
     to: "silicon.logic.tech@gmail.com", // list of receivers
     subject: "Hello ✔", // Subject line
     text: "Hello world?", // plain text body
@@ -34,4 +25,4 @@ async function Email() {
   // Message sent: <d786aa62-4e0a-070a-47ed-0b0666549519@ethereal.email>
 }
 
-Email().catch(console.error);
+SendMail().catch(console.error);
