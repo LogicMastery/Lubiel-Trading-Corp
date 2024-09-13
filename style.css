@@ -159,6 +159,15 @@ body {
 }
 
 /* Contact */
+
+.triangle {
+    width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 50px solid #555;
+}
+
 .contact-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -192,6 +201,23 @@ body {
 }
 
 .description-contact {
+    font-size: 20px;
+    font-weight: 200;
+}
+
+/* Styling the contact info text and heading */
+.contact-info-content {
+    color: #F79431;
+    padding: 10px;
+}
+
+.heading-contact-info{
+    font-size: 96px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.description-contact-info {
     font-size: 20px;
     font-weight: 200;
 }
