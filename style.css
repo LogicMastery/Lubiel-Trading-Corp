@@ -291,7 +291,7 @@ even they are in the same class, the problem is that I'm missing an end section 
     padding: 20px;
     top: 40%;
     right: 40%;
-    transform: translate(25%, -30%);
+    transform: translate(15%, -30%);
     align-items: center;
 }
 
