@@ -271,7 +271,7 @@ body {
     width: 460px;
     height: 398px;
     left: 40%;
-    transform: translate(20%);
+    transform: translate(30%);
 }
 
 /* Made the company section text align to the picture, and I also align every section of the page,
@@ -282,7 +282,8 @@ even they are in the same class, the problem is that I'm missing an end section 
     padding: 20px;
     top: 40%;
     right: 40%;
-    transform: translate(-40%, -40%)
+    transform: translate(-25%, -10%);
+    align-items: center;
 }
 
 .company-text-content-2 {
@@ -290,23 +291,8 @@ even they are in the same class, the problem is that I'm missing an end section 
     padding: 20px;
     top: 40%;
     right: 40%;
-    transform: translate(10%, -30%)
-}
-
-.company-text-content-3 {
-    color: #F79431;
-    padding: 20px;
-    top: 40%;
-    right: 40%;
-    transform: translate(-40%, -30%)
-}
-
-.company-text-content-4 {
-    color: #F79431;
-    padding: 20px;
-    top: 40%;
-    right: 40%;
-    transform: translate(10%, -30%)
+    transform: translate(25%, -30%);
+    align-items: center;
 }
 
 .heading-company {
@@ -326,14 +312,12 @@ even they are in the same class, the problem is that I'm missing an end section 
     font-weight: 200;
 }
 
-.description-company-3 {
-    font-size: 24px;
-    font-weight: 200;
-}
-
-.description-company-4 {
-    font-size: 24px;
-    font-weight: 200;
+.company-image-2 img {
+    border-radius: 10px;
+    width: 460px;
+    height: 398px;
+    left: 40%;
+    transform: translate(60%);
 }
 
 /* Footer */
