@@ -91,10 +91,10 @@ body {
 }
 
 .hero-image {
-    width: 100%;
+    width: 1770px;
     height: 657px;
     top: 40%;
-    transform: translate(0%, -12%);
+    transform: translate(-10.4%, -12%);
     opacity: 0.7;
 }
 
@@ -364,51 +364,89 @@ even they are in the same class, the problem is that I'm missing an end section 
     width: 100%;
     padding: 60px 0 100px;
 }
-.bottom-menu {
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    color: #ffffff;
+
+.footer-main-flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.footer-nav {
-    font-size: 30px;
+.footer-menu {
+    flex-basis: 500%;
+    display: flex;
+}
+
+.footer-menu a {
+    line-height: 40px;
+}
+
+.footer-text ul:nth-child(1),
+.footer-logo ul:nth-child(2),
+.footer-nav-links, .footer-nav ul:nth-child(3), 
+.footer-qucik-links, .footer-quick ul:nth-child(4),
+.footer-work-hours, .footer-time, .work-hours-text ul:nth-child(5){
+    flex-basis: 300px;
+}
+
+.footer-text span {
+    font-size: 20px;
+    font-weight: 200;
+    line-height: normal;
+    color: #ffff;
+    padding-right: 30px;
+}
+.footer-nav, .footer-quick {
+    font-size: 24px;
     font-weight: 500;
-}
-.footer-quick-links {
-    display: grid;
-    width: 220px;
-    height: 29px;
-    font-size: 24px;
-    color: #ffffffd1;
-    text-decoration: none;
-    margin-right: 15px;
-    margin-bottom: 10px;
-    text-align: left;
+    padding-right: 150px;
 }
 
-.footer-quick-links {
+.footer-quick-links, .footer-nav-links {
     text-transform: uppercase;
 }
 
-.footer-nav-links {
-    display: grid;
-    width: 220px;
-    height: 29px;
-    font-size: 24px;
-    color: #ffffffd1;
+.footer-nav-links, .footer-quick-links {
+    padding-right: 150px;
+    font-size: 18px;
+    color: #ffff;
     text-decoration: none;
-    margin-right: 15px;
-    margin-bottom: 10px;
-    text-align: left;
 }
 
-.footer-nav-links {
-    text-transform: uppercase;
+/* Need to fix the font styling ASAP */
+.footer-work-hours span{
+    font-size: 24px;
+    font-weight: 500;
+    padding-right: 250px;
 }
 
-.copyrights {
-    text-align: center;
-    transform: translate(50%);
+.footer-time span{
+    font-size: 18px;
+    font-weight: 200;
+    padding-right: 250px;
+}
+
+.work-hours-text span{
+    font-size: 24px;
+    font-weight: 200;
+    padding-right: 250px;
+}
+
+.footer-work-hours, .footer-time, .work-hours-text ul:nth-child(5) {
+    padding-right: 300px;
+}
+
+.footer-logo img{
+    width: 151px;
+    height: 136px;
+    top: 0;
+    left: 0;
+}
+
+.copyright {
+    font-size: 15px;
+    font-weight: 400;
+    color: #ffff;
+    line-height: 60px;
 }
 
 /* Responsive Design */
