@@ -1,4 +1,10 @@
 /* Reset and basic styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body, h1, p, ul, li {
     margin: 0;
     padding: 0;
@@ -14,6 +20,10 @@ body {
     padding: 20px;
 }
 
+.wrapper-main {
+    width: 1440px;
+    margin: 0 auto;
+}
 /* Navigation Menu */
 .img-logo {
     width: 95px;
@@ -348,24 +358,57 @@ even they are in the same class, the problem is that I'm missing an end section 
 }
 
 /* Footer */
-.bottom-menu {
+
+.footer-container {
     background-color: #000080;
+    width: 100%;
+    padding: 60px 0 100px;
+}
+.bottom-menu {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
     color: #ffffff;
-    text-align: left;
-    padding: 20px;
-    
 }
 
-.footer-links, .footer-page {
-    font-size: 20px;
+.footer-nav {
+    font-size: 30px;
+    font-weight: 500;
+}
+.footer-quick-links {
+    display: grid;
+    width: 220px;
+    height: 29px;
+    font-size: 24px;
     color: #ffffffd1;
     text-decoration: none;
     margin-right: 15px;
     margin-bottom: 10px;
+    text-align: left;
 }
 
-.copyright-logo {
+.footer-quick-links {
+    text-transform: uppercase;
+}
+
+.footer-nav-links {
+    display: grid;
+    width: 220px;
+    height: 29px;
+    font-size: 24px;
+    color: #ffffffd1;
+    text-decoration: none;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.footer-nav-links {
+    text-transform: uppercase;
+}
+
+.copyrights {
     text-align: center;
+    transform: translate(50%);
 }
 
 /* Responsive Design */
