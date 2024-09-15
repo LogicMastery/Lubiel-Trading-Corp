@@ -214,6 +214,98 @@ body {
     font-weight: 200;
 }
 
+/* Description icons for phone, email and location */
+.phone-icon {
+    font-size: 75px;
+}
+
+.email-icon {
+    font-size: 75px;
+    transform: translate(-10%);
+}
+
+.icons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+    gap: 5px;
+    justify-items: left;
+}
+
+.icons-text {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+    gap: 5px;
+    justify-items: left;
+}
+
+.phone-text {
+    color: #F79431;
+    width: 130px;
+    height: 50px;
+    transform: translate(-10%);
+}
+
+.phone-text-2 {
+    color: #F79431;
+    width: 130px;
+    height: 50px;
+    transform: translate(-10%, -50%);
+    text-align: center;
+}
+
+.email-text {
+    color: #F79431;
+    width: 130px;
+    height: 50px;
+    transform: translate(-35%);
+}
+
+.email-text-2 {
+    color: #F79431;
+    width: 130px;
+    height: 50px;
+    transform: translate(-25%, -50%);
+    text-align: center;
+}
+
+.location-text {
+    color: #F79431;
+    width: 130px;
+    height: 50px;
+    transform: translate(-10%);
+}
+
+.location-text-2 {
+    color: #F79431;
+    width: 130px;
+    height: 50px;
+    transform: translate(-20%, -50%);
+    text-align: center;
+}
+
+/* Map text styling and embed map */
+.maps {
+    top: 40%;
+    right: 40%;
+    transform: translate(120%, -90%);
+}
+
+.map-heading {
+    color: #F79431;
+    font-size: 40px;
+    font-weight: 500;
+    width: 233px;
+    height: 42px;
+
+}
+
+.map-text {
+    color: #F79431;
+    font-size: 24px;
+    font-weight: 200;
+    width: 619px;
+    height: 92px;
+}
 /* Styling the contact info text and heading */
 .contact-info-content {
     color: #F79431;
@@ -230,12 +322,6 @@ body {
     font-size: 24px;
     font-weight: 200;
     width: 580px;
-}
-
-.maps {
-    top: 40%;
-    right: 40%;
-    transform: translate(120%, -100%);
 }
 
 /* Contact form */
@@ -361,7 +447,8 @@ even they are in the same class, the problem is that I'm missing an end section 
 .footer-container {
     background-color: #000080;
     width: 100%;
-    padding: 60px 0 100px;
+    padding: 60px 0 50px;
+    transform: translate(0%, 33%);
 }
 
 .footer-main-flex {
