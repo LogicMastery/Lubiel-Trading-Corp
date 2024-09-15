@@ -44,7 +44,7 @@ body {
     justify-content: flex-end;
 }
 .menu {
-    padding: 3%
+    padding: 4%
 }
 .nav-links {
     margin-left: 150px;
@@ -177,11 +177,9 @@ body {
 }
 
 .contact-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 90px;
-    margin-bottom: 20px;
-    align-items: center;
+    width: 1805px;
+    height: 420px;
+    transform: translate(-10.2%, -18%);
     background: rgb(0,0,128);
     background: linear-gradient(90deg, rgba(0,0,128,1) 30%, rgba(2,0,36,1) 77%); 
 }
@@ -191,15 +189,18 @@ body {
     height: auto;
     border-radius: 10px;
     width: 340px;
-    height: 459px;
+    height: 480px;
     top: 40%;
     left: 40%;
-    transform: translate(50%, 10%);
+    transform: translate(400%, -5%);
 }
 
 .contact-text-content {
     color: #F79431;
     padding: 10px;
+    width: 580px;
+    height: 98px;
+    transform: translate(30%, 80%);
 }
 
 .heading-contact{
@@ -244,13 +245,11 @@ body {
     border-radius: 35px;
     background: rgb(0,0,128);
     background: linear-gradient(90deg, rgba(0,0,128,1) 30%, rgba(2,0,36,1) 92%); 
-    right: 40%;
-    transform: translate(30%);
     padding: 25px;
 }
 
 #send-mail, #name {
-    width: 556px;
+    width: 530px;
     height: 55px;
     border-radius: 50px;
     border: 1px solid #767693;
@@ -308,7 +307,7 @@ body {
     width: 460px;
     height: 398px;
     left: 40%;
-    transform: translate(30%);
+    transform: translate(10%, -20%);
 }
 
 /* Made the company section text align to the picture, and I also align every section of the page,
@@ -317,9 +316,9 @@ even they are in the same class, the problem is that I'm missing an end section 
 .company-text-content-1 {
     color: #F79431;
     padding: 20px;
-    top: 40%;
-    right: 40%;
-    transform: translate(-25%, -10%);
+    top: 0;
+    right: 0;
+    transform: translate(-5%, -20%);
     align-items: center;
 }
 
@@ -328,7 +327,7 @@ even they are in the same class, the problem is that I'm missing an end section 
     padding: 20px;
     top: 40%;
     right: 40%;
-    transform: translate(15%, -30%);
+    transform: translate(5%, -10%);
     align-items: center;
 }
 
@@ -354,7 +353,7 @@ even they are in the same class, the problem is that I'm missing an end section 
     width: 460px;
     height: 398px;
     left: 40%;
-    transform: translate(60%);
+    transform: translate(50%);
 }
 
 /* Footer */
@@ -372,7 +371,7 @@ even they are in the same class, the problem is that I'm missing an end section 
 }
 
 .footer-menu {
-    flex-basis: 500%;
+    flex-basis: 100%;
     display: flex;
 }
 
@@ -385,7 +384,7 @@ even they are in the same class, the problem is that I'm missing an end section 
 .footer-nav-links, .footer-nav ul:nth-child(3), 
 .footer-qucik-links, .footer-quick ul:nth-child(4),
 .footer-work-hours, .footer-time, .work-hours-text ul:nth-child(5){
-    flex-basis: 300px;
+    flex-basis: 100px;
 }
 
 .footer-text span {
