@@ -452,73 +452,48 @@ even they are in the same class, the problem is that I'm missing an end section 
 }
 
 .footer-main-flex {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+    gap: 5px;
+    justify-items: left;
     justify-content: center;
-    flex-wrap: wrap;
 }
 
-.footer-menu {
-    flex-basis: 100%;
-    display: flex;
-}
 
-.footer-menu a {
-    line-height: 40px;
-}
 
-.footer-text ul:nth-child(1),
-.footer-logo ul:nth-child(2),
-.footer-nav-links, .footer-nav ul:nth-child(3), 
-.footer-qucik-links, .footer-quick ul:nth-child(4),
-.footer-work-hours, .footer-time, .work-hours-text ul:nth-child(5){
-    flex-basis: 100px;
-}
-
-.footer-text span {
-    font-size: 20px;
-    font-weight: 200;
-    line-height: normal;
-    color: #ffff;
-    padding-right: 30px;
-}
-.footer-nav, .footer-quick {
-    font-size: 24px;
-    font-weight: 500;
-    padding-right: 150px;
-}
-
-.footer-quick-links, .footer-nav-links {
-    text-transform: uppercase;
-}
-
-.footer-nav-links, .footer-quick-links {
-    padding-right: 150px;
-    font-size: 18px;
-    color: #ffff;
-    text-decoration: none;
-}
 
 /* Need to fix the font styling ASAP */
-.footer-work-hours span{
+.footer-work-hours {
     font-size: 24px;
     font-weight: 500;
     padding-right: 250px;
+    width: 500px;
+    height: 36px;
+    transform: translate(18%, -10%);
 }
 
-.footer-time span{
-    font-size: 18px;
+.footer-time {
+    font-size: 20px;
     font-weight: 200;
     padding-right: 250px;
+    width: 500px;
+    height: 29px;
+    text-align: center;
+    transform: translate(9%, -10%);
 }
 
-.work-hours-text span{
-    font-size: 24px;
+.work-hours-text {
+    font-size: 20px;
     font-weight: 200;
     padding-right: 250px;
+    width: 500px;
+    height: 65spx;
+    text-align: center;
+    transform: translate(15%, -10%);
 }
 
 .footer-work-hours, .footer-time, .work-hours-text ul:nth-child(5) {
-    padding-right: 300px;
+    padding-right: 200px;
 }
 
 .footer-logo img{
