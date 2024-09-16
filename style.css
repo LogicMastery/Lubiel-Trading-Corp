@@ -451,7 +451,7 @@ footer {
     position: relative;
     width: 100%;
     height: auto;
-    padding: 120px 180px;
+    padding: 50px 180px;
     background: #000080;
 }
 
@@ -482,8 +482,13 @@ footer .footer-container .sec h2::before {
 
 footer .footer-container .sec p{
     color: #ffff;
+    font-size: 20px;
 }
 
+.about-comp{
+    font-size: 15px;
+    font-weight: 200;
+}
 .footer-navigation {
     margin-top: -5px;
     display: grid;
@@ -506,6 +511,7 @@ footer .footer-container .sec p{
     color: #fff;
     font-size: 20px;
     font-weight: 200;
+    text-transform: uppercase;
 }
 
 .quick-links {
@@ -513,12 +519,55 @@ footer .footer-container .sec p{
     display: grid;
 }
 
+.quick-links li {
+    list-style-type: none;
+}
 
+.quick-links li a {
+    display: inline-block;
+    width: 48px;
+    height: 30px;
+    background: #000080;
+    display: grid;
+    align-content: left;
+    justify-content: left;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 200;
+    text-transform: uppercase;
+}
 
+.work-time {
+    position: relative;
+}
+
+.work-time li:nth-child(1) {
+    color: #ffff;
+    font-size: 20px;
+}
+
+.work-time li {
+    display: grid;
+    margin-bottom: 16px;
+    text-align: center;
+    transform: translate(-15%);
+    font-size: 20px;
+    font-weight: 200;
+}
 
 .footer-logo {
     width: 95px;
     height: 95px;
+}
+
+.copyright-text {
+    width: 100%;
+    background: #000080;
+    padding: 8px 100px;
+    text-align: center;
+    color: #ffff;
 }
 /* Responsive Design */
 @media only screen and (max-width: 1158px) {
