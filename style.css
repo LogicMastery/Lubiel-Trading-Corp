@@ -13,6 +13,9 @@ body, h1, p, ul, li {
 
 body {
     font-family: 'Calibre', sans-serif;
+    display: grid;
+    justify-content: end;
+    align-content: end;
     color: white;
 }
 
@@ -444,72 +447,79 @@ even they are in the same class, the problem is that I'm missing an end section 
 
 /* Footer */
 
-.footer-container {
-    background-color: #000080;
+footer {
+    position: relative;
     width: 100%;
-    padding: 60px 0 50px;
-    transform: translate(0%, 33%);
+    height: auto;
+    padding: 120px 180px;
+    background: #000080;
 }
 
-.footer-main-flex {
+footer .footer-container {
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
-    gap: 5px;
-    justify-items: left;
-    justify-content: center;
+    grid-template-columns: 100px 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
 }
 
-
-
-
-/* Need to fix the font styling ASAP */
-.footer-work-hours {
-    font-size: 24px;
+footer .footer-container .sec h2 {
+    position: relative;
+    color: #fff;
+    font-size: 30px;
     font-weight: 500;
-    padding-right: 250px;
-    width: 500px;
-    height: 36px;
-    transform: translate(18%, -10%);
+    margin-bottom: 15px;
 }
 
-.footer-time {
-    font-size: 20px;
-    font-weight: 200;
-    padding-right: 250px;
-    width: 500px;
-    height: 29px;
-    text-align: center;
-    transform: translate(9%, -10%);
-}
-
-.work-hours-text {
-    font-size: 20px;
-    font-weight: 200;
-    padding-right: 250px;
-    width: 500px;
-    height: 65spx;
-    text-align: center;
-    transform: translate(15%, -10%);
-}
-
-.footer-work-hours, .footer-time, .work-hours-text ul:nth-child(5) {
-    padding-right: 200px;
-}
-
-.footer-logo img{
-    width: 151px;
-    height: 136px;
-    top: 0;
+footer .footer-container .sec h2::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
     left: 0;
+    width: 140px;
+    height: 2px;
+    background: #F79431;
 }
 
-.copyright {
-    font-size: 15px;
-    font-weight: 400;
+footer .footer-container .sec p{
     color: #ffff;
-    line-height: 60px;
 }
 
+.footer-navigation {
+    margin-top: -5px;
+    display: grid;
+}
+
+.footer-navigation li {
+    list-style-type: none;
+}
+
+.footer-navigation li a {
+    display: inline-block;
+    width: 48px;
+    height: 30px;
+    background: #000080;
+    display: grid;
+    align-content: left;
+    justify-content: left;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.quick-links {
+    margin-top: -5px;
+    display: grid;
+}
+
+
+
+
+.footer-logo {
+    width: 95px;
+    height: 95px;
+}
 /* Responsive Design */
 @media only screen and (max-width: 1158px) {
     .hook {
