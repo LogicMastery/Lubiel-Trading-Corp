@@ -673,6 +673,7 @@ footer .footer-container .sec p{
     text-align: center;
     color: #ffff;
 }
+
 /* Responsive Design */
 @media only screen and (max-width: 1158px) {
     .hook {
