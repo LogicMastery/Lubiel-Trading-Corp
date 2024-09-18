@@ -1,3 +1,4 @@
+// selected links that you are currently on
 const ActivePage = window.location.pathname;
 const navLinks = document.querySelectorAll('nav a').forEach(link => {
     if(link.href.includes(`${ActivePage}`)){
@@ -5,4 +6,4 @@ const navLinks = document.querySelectorAll('nav a').forEach(link => {
     }
 });
 
-
+// making the send email work
