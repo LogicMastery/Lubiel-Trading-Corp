@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
     <meta charset="UTF-8">
@@ -7,7 +7,9 @@
     <script src="https://kit.fontawesome.com/0a4c800976.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/x-icon" href="icon/favicon.ico">
     <link rel="stylesheet" href="style.css">
-    <script src="app.js" defer></script>
+    <script type="module/text/javascript" base href="./" src="./app.js" defer></script> <!--Fixed the the module error all I need to add in my script tag is type="module/text/javascript" that will fixed the module error-->
+    <script type="module/text/javascript" src="server.js" defer></script>
+    
     <title>Lubiel Trading - Contact</title>
 </head>
 
@@ -66,7 +68,7 @@
         <!-- Contact Section -->
         <section class="contact-container">
             <article>
-                <form method="post" class="contact-form">
+                <form method="submit" class="contact-form">
                     <label for="contact-title" id="contact-title">Get In Touch!</label><br>
                     <label for="contact-description" id="contact-description">Lorem ipsum dolor sit amet consectetur.
                         Bibendum viverra ornare arcu ac feugiat consequat.</label><br><br>
@@ -74,7 +76,7 @@
                     <input type="text" id="name" name="name" placeholder="Name" required> <br><br>
                     <textarea name="message" id="write-message" placeholder="Message" cols="65" rows="12"
                         required></textarea> <br><br>
-                    <input type="submit" value="Send Message" class="submit" id="send">
+                    <input type="submit" class="submit" value="Send Message" id="send" onclick="submit()">
                 </form>
             </article>
             <!--Embeded maps-->
