@@ -7,7 +7,7 @@ const transporter = nodemailer.createTransport({
   secure: true, // true for port 465, false for other ports
   auth: {
     user: "resend",
-    pass: "re_D4A82adt_2BLaLBqHQ5hz9UT6jwDgYZRE",
+    pass: "re_Mgp5UvLD_7dz3nqoEaxLCdPqhZcebkpJx",
   },
 });
 
@@ -15,7 +15,7 @@ const transporter = nodemailer.createTransport({
 async function main() {
   // send mail with defined transport object
   const info = await transporter.sendMail({
-    from: 'delivered@resend.dev', 
+    from: '"Resend" <delivered@resend.dev>', 
     to: "silicon.logic.tech@gmail.com", 
     subject: "test", 
     text: "Did it work?", 
