@@ -675,7 +675,7 @@ footer .footer-container .sec p{
     color: #ffff;
 }
 
-/* Responsive Design */
+/* Responsive Design for mobile and tablet version */
 @media only screen and (max-width: 1158px) {
 .menu {
     width: 1158px;
@@ -685,7 +685,7 @@ footer .footer-container .sec p{
 /* Mobile Screen */
 @media only screen and (max-width: 430px) {
 
-/* Hamburger Menu */
+/* Working on to make the hamburger menu work on the mobile version, and making sure it's responsive for the mobile. */
 .img-logo {
     width: 95px;
     height: 95px;
@@ -720,7 +720,7 @@ footer .footer-container .sec p{
     position: relative;
 }
 
-/* Hero Section */
+/* I made the home page responsive for the mobile version */
 .hero-section {
     position: relative;
     display: grid;
@@ -738,7 +738,7 @@ footer .footer-container .sec p{
     position: absolute;
     top: 30%;
     left: 40%;
-    transform: translate(70%, -30%);
+    transform: translate(85%, -30%);
     color: #F79431;
     text-align: left;
 }
@@ -816,135 +816,59 @@ footer .footer-container .sec p{
     font-weight: 200;
 }
 
-/* Footer */
-
-footer {
-    position: relative;
-    width: 101.9%;
-    height: auto;
-    padding: 90px 190px;
-    background: #000080;
+/* Making the company page responsive for the mobile version of the page */
+.company-section {
+    grid-template-columns: repeat(1, 1fr);
+    transform: translate(80%);
 }
 
-footer .footer-container {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    grid-gap: 20px;
+.company-image img {
+    border-radius: 10px;
+    width: 400px;
+    height: 398px;
 }
 
-footer .footer-container .sec h2 {
-    position: relative;
-    color: #fff;
-    font-size: 30px;
+.company-text-content-1 {
+    color: #F79431;
+    padding: 20px;
+    top: 0;
+    right: 0;
+    transform: translate(2%, -20%);
+    align-items: center;
+}
+
+.company-text-content-2 {
+    color: #F79431;
+    padding: 20px;
+    top: 40%;
+    right: 40%;
+    transform: translate(3%, -10%);
+    align-items: center;
+}
+
+.heading-company {
+    font-size: 70px;
     font-weight: 500;
-    margin-bottom: 15px;
-    transform: translate(70%);
+    margin-bottom: 10px;
 }
 
-footer .footer-container .sec h2::before {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 140px;
-    height: 2px;
-    background: #F79431;
-}
-
-footer .footer-container .sec p{
-    color: #ffff;
-    font-size: 20px;
-    transform: translate(160%);
-}
-
-.about-comp{
+.description-company-1 {
     font-size: 20px;
     font-weight: 200;
-    transform: translate(41%)
-}
-.footer-navigation {
-    margin-top: -5px;
-    display: grid;
+    width: 425px;
 }
 
-.footer-navigation h2{
-    transform: translate(70%);
-}
-
-.footer-navigation li {
-    list-style-type: none;
-}
-
-.footer-navigation li a {
-    display: inline-block;
-    width: 48px;
-    height: 30px;
-    background: #000080;
-    display: grid;
-    align-content: left;
-    justify-content: left;
-    border-radius: 4px;
-    text-decoration: none;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 200;
-    text-transform: uppercase;
-}
-
-.quick-links {
-    margin-top: -5px;
-    display: grid;
-}
-
-.quick-links li {
-    list-style-type: none;
-}
-
-.quick-links li a {
-    display: inline-block;
-    width: 48px;
-    height: 30px;
-    background: #000080;
-    display: grid;
-    align-content: left;
-    justify-content: left;
-    border-radius: 4px;
-    text-decoration: none;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 200;
-    text-transform: uppercase;
-}
-
-.work-time {
-    position: relative;
-}
-
-.work-time li:nth-child(1) {
-    color: #ffff;
-    font-size: 20px;
-}
-
-.work-time li {
-    display: grid;
-    margin-bottom: 16px;
-    text-align: center;
-    transform: translate(-15%);
+.description-company-2 {
     font-size: 20px;
     font-weight: 200;
 }
 
-.footer-logo {
-    width: 95px;
-    height: 95px;
+.company-image-2 img {
+    border-radius: 10px;
+    width: 400px;
+    height: 398px;
+    left: 40%;
+    transform: translate(9%);
 }
 
-.copyright-text {
-    width: 100%;
-    background: #000080;
-    padding: 8px 100px;
-    text-align: center;
-    color: #ffff;
-}
 }
