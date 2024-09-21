@@ -829,7 +829,7 @@ footer {
 footer .footer-container {
     width: 100%;
     display: grid;
-    grid-template-rows: 200px 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-gap: 20px;
 }
 
@@ -839,6 +839,7 @@ footer .footer-container .sec h2 {
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 15px;
+    transform: translate(70%);
 }
 
 footer .footer-container .sec h2::before {
@@ -854,15 +855,21 @@ footer .footer-container .sec h2::before {
 footer .footer-container .sec p{
     color: #ffff;
     font-size: 20px;
+    transform: translate(160%);
 }
 
 .about-comp{
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 200;
+    transform: translate(41%)
 }
 .footer-navigation {
     margin-top: -5px;
     display: grid;
+}
+
+.footer-navigation h2{
+    transform: translate(70%);
 }
 
 .footer-navigation li {
