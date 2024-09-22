@@ -756,7 +756,7 @@ footer .footer-container .sec p{
 }
 
 .wrapper-main {
-    max-width: 428px;
+    max-width: 430px;
     height: auto;
     margin: 0 auto;
 }
@@ -829,10 +829,6 @@ footer .footer-container .sec p{
 }
 
 .company-text-content-1 {
-    color: #F79431;
-    padding: 20px;
-    top: 0;
-    right: 0;
     transform: translate(2%, -20%);
     align-items: center;
 }
@@ -847,20 +843,27 @@ footer .footer-container .sec p{
 }
 
 .heading-company {
-    font-size: 70px;
+    font-size: 60px;
     font-weight: 500;
     margin-bottom: 10px;
+    text-align: center;
+    transform: translate(1%)
 }
 
 .description-company-1 {
     font-size: 20px;
     font-weight: 200;
-    width: 425px;
+    width: 400px;
+    text-align: center;
+    transform: translate(1%)
 }
 
 .description-company-2 {
     font-size: 20px;
     font-weight: 200;
+    width: 400px;
+    transform: translate(1%);
+    text-align: center;
 }
 
 .company-image-2 img {
