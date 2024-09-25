@@ -6,32 +6,32 @@ const navLinks = document.querySelectorAll('nav a').forEach(link => {
     }
 });
 
-let mail = document.getElementById('send-mail');
-let name = document.getElementById('name');
-let message = document.getElementById('write-message');
+// let mail = document.getElementById('send-mail');
+// let name = document.getElementById('name');
+// let message = document.getElementById('write-message');
 
-if(mail && name && message) {
-    contactForm.addEventListener('submit', (e) =>{
-        e.preventDefault();
+// if(mail && name && message) {
+//     contactForm.addEventListener('submit', (e) =>{
+//         e.preventDefault();
     
-        let formData = {
-            mail: mail.ariaValueMax,
-            name: name.value,
-            message: message.value
-        }
+//         let formData = {
+//             mail: mail.ariaValueMax,
+//             name: name.value,
+//             message: message.value
+//         }
     
-        let xhr = new XMLHttpRequest();
-        xhr.open('POST', '/');
-        xhr.setRequestHeader('content-type', 'application/json');
-        xhr.onload = function(){
-            console.log(xhr.responseText);
-            if(xhr.responseText == 'Success'){
-                alert('Email sent!');
-                mail.value = '';
-                name.value = '';
-                message.value = '';
-            }
-        }
-    })
+//         let xhr = new XMLHttpRequest();
+//         xhr.open('POST', '/');
+//         xhr.setRequestHeader('content-type', 'application/json');
+//         xhr.onload = function(){
+//             console.log(xhr.responseText);
+//             if(xhr.responseText == 'Success'){
+//                 alert('Email sent!');
+//                 mail.value = '';
+//                 name.value = '';
+//                 message.value = '';
+//             }
+//         }
+//     })
 
-}
+// }
