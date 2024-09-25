@@ -57,8 +57,12 @@ body {
     color: #000;
 }
 
-.nav-link:hover{
+.navbar-light .navbar-nav .nav-link {
     color: #000;
+}
+
+.navbar-light:hover .navbar-nav:hover .nav-link:hover {
+    color: #F79431;
 }
 
 .nav-item {
