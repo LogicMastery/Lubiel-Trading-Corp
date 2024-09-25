@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/0a4c800976.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="icon" type="image/x-icon" href="icon/favicon.ico">
     <link rel="stylesheet" href="style.css">
     <script type="module/text/javascript" src="app.js" async></script> <!--Fixed the the module error all I need to add in my script tag is type="module/text/javascript" that will fixed the module error-->
@@ -15,25 +15,34 @@
 
 <body>
     <!--Navigation Menu-->
-    <header>
-        <nav>
-            <ul class="menu">
-                <li class="nav-links"><a class="logo" href="index.html"><img class="img-logo"
-                    src="icon/ltc-orig.png" alt=""></a></li>
-                <li class="nav-links"><a href="index.html" class="nav-page">Home</a></li>
-                <li class="nav-links"><a href="company.html" class="nav-page">Company</a></li>
-                <li class="nav-links"><a href="accreditation.html" class="nav-page">Accreditation</a></li>
-                <li class="nav-links"><a href="contact.html" class="nav-page">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container">
+              <a class="navbar-brand" href="index.html"><img src="icon/ltc-orig.png" alt="" class="img-logo"></a>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav nav justifi-content-end">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="company.html">Company</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="accreditation.html">Accreditation</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    <div class="container-sm">
             <!-- Hero Section -->
-            <section class="hero-section col">
-                        <img src="images/fog-8208493_1920.jpg" alt="Hero Image" class="hero-image">
+            <section class="hero-section row">
+                        <img src="images/fog-8208493_1920.jpg" alt="Hero Image" class="hero-image col">
                         <article class="headline col">
-                            <h1 class="hook">Philippine Safety Equipment and Disaster Supplies</h1>
-                            <p class="placeholder">Lorem ipsum dolor sit amet consectetur. Varius fermentum morbi sed lorem urna iaculis quis tristique nibh. Viverra arcu nam ut morbi nibh arcu elementum venenatis scelerisque. Posuere vitae sollicitudin porttitor eget diam scelerisque
+                            <h1 class="hook col-sm-6">Philippine Safety Equipment and Disaster Supplies</h1>
+                            <p class="placeholder col-sm-6s">Lorem ipsum dolor sit amet consectetur. Varius fermentum morbi sed lorem urna iaculis quis tristique nibh. Viverra arcu nam ut morbi nibh arcu elementum venenatis scelerisque. Posuere vitae sollicitudin porttitor eget diam scelerisque
                                 dolor. Sed in proin praesent iaculis vel commodo condimentum.</p>
                         </article>
                     </section>
@@ -117,10 +126,8 @@
             <div class="copyright-text">
                 <p>&copy; 2024 Lubiel Trading Corp, All Rights Reserved</p>
             </div>
-            <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
         </body>
         </html>

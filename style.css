@@ -33,31 +33,31 @@ body {
 
 /* Navigation Menu */
 .img-logo {
-    width: 95px;
-    height: 95px;
-    top: 40%;
-    right: 40%;
-    transform: translate(-600%, -40%);
+    width: 80px;
+    height: 80px;
 }
 
 .logo {
     text-decoration: none;
 }
-.menu {
+.navbar {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: flex-end;
 }
-.menu {
+.navbar {
     padding: 4%
 }
-.nav-links {
-    margin-left: 150px;
+
+.nav {
+    margin-left: auto;
 }
 
-.nav-page {
+.nav-item {
+    margin-left: 50px;
+}
+
+.nav-link {
     color: #000;
     text-decoration: none;
     font-size: 20px;
@@ -65,7 +65,7 @@ body {
     position: relative;
 }
 
-.nav-page::before {
+.nav-link::before {
     content: "";
     position: absolute;
     bottom: -2px;
@@ -77,11 +77,11 @@ body {
     transition: transform 0.2s linear;
 }
 
-.nav-page:hover::before {
+.nav-link:hover::before {
     transform: scale(1);
 }
 
-.nav-page.active::before {
+.nav-link active::before {
     transform: scale(1);
 }
 
