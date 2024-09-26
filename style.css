@@ -23,14 +23,6 @@ body {
     padding: 20px;
 }
 
-.wrapper-main {
-    display: flexbox;
-    flex-wrap: wrap;
-    width: 1440px;
-    height: auto;
-    margin: 0 auto;
-}
-
 /* Navigation Menu */
 .img-logo {
     width: 80px;
@@ -55,6 +47,7 @@ body {
 
 .navbar-brand {
     color: #000;
+    transform: translate(15%);
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -68,6 +61,7 @@ body {
 .nav-item {
     margin-left: 70px;
 }
+
 
 .nav-link {
     color: #000;
@@ -98,10 +92,6 @@ body {
 }
 
 /* Container for the responsive website */
-.container {
-    width: 100%;
-    height: auto;
-}
 /* Hero Section */
 .hero-section {
     position: relative;
@@ -119,9 +109,10 @@ body {
 
 .headline {
     position: absolute;
-    transform: translate(5%, -50%);
+    transform: translate(-50%, -20%);
     color: #F79431;
     text-align: left;
+    width: 700px;
 }
 
 .hook {
@@ -196,7 +187,7 @@ body {
 .contact-section {
     width: 1805px;
     height: 420px;
-    transform: translate(-10.2%, -18%);
+    transform: translate(-14%, -18%);
     background: rgb(0,0,128);
     background: linear-gradient(90deg, rgba(0,0,128,1) 30%, rgba(2,0,36,1) 77%); 
 }
@@ -442,7 +433,7 @@ even they are in the same class, the problem is that I'm missing an end section 
     padding: 20px;
     top: 0;
     right: 0;
-    transform: translate(-5%, -20%);
+    transform: translate(10%, -20%);
     align-items: center;
 }
 
@@ -579,6 +570,10 @@ footer .footer-container {
     grid-gap: 20px;
 }
 
+footer {
+    transform: translate(0, 45%)
+}
+
 footer .footer-container .sec h2 {
     position: relative;
     color: #fff;
@@ -688,17 +683,17 @@ footer .footer-container .sec p{
 }
 
 /* Responsive Design for mobile and tablet version */
-@media only screen and (max-width: 1158px) {
+/* @media only screen and (max-width: 1158px) {
 .menu {
     width: 1158px;
 }
-}
+} */
 
 /* Mobile Screen */
-@media only screen and (max-width: 430px) {
+/* @media only screen and (max-width: 430px) { */
 
 /* Working on to make the hamburger menu work on the mobile version, and making sure it's responsive for the mobile. */
-.img-logo {
+/* .img-logo {
     width: 95px;
     height: 95px;
     top: 40%;
@@ -730,10 +725,10 @@ footer .footer-container .sec p{
     font-size: 20px;
     text-transform: uppercase;
     position: relative;
-}
+} */
 
 /* I made the home page responsive for the mobile version */
-.hero-section {
+/* .hero-section {
     position: relative;
     display: grid;
     place-items: right;
@@ -771,10 +766,10 @@ footer .footer-container .sec p{
     max-width: 430px;
     height: auto;
     margin: 0 auto;
-}
+} */
 
 /* Product links */
-.product-links {
+/* .product-links {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(650px, 1fr));
     gap: 20px;
@@ -791,10 +786,10 @@ footer .footer-container .sec p{
 
 .product-link:hover {
     transform: scale(1.1);
-}
+} */
 
 /* Section Content */
-.section {
+/* .section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
@@ -826,10 +821,10 @@ footer .footer-container .sec p{
 .description-section-1, .description-section-2 {
     font-size: 20px;
     font-weight: 200;
-}
+} */
 
 /* Making the company page responsive for the mobile version of the page */
-.company-section {
+/* .company-section {
     grid-template-columns: repeat(1, 1fr);
     transform: translate(80%);
 }
@@ -886,4 +881,4 @@ footer .footer-container .sec p{
     transform: translate(9%);
 }
 
-}
+} */
