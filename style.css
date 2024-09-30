@@ -23,7 +23,8 @@ body {
     padding: 20px;
 }
 
-/* Navigation Menu */
+/* The navigation menu is where you navigate other pages like home page, 
+contact page and company page, it's an easy access*/
 .img-logo {
     width: 50px;
     height: 50px;
@@ -102,8 +103,8 @@ body {
 .navbar-toggler {
     border: none;
 }
-/* Container for the responsive website */
-/* Hero Section */
+/* Home page Section
+ The Hero Section is the main title of the page, it also describe what we offer on the website.  */
 .hero-section {
     position: relative;
     display: grid;
@@ -136,7 +137,8 @@ body {
     font-size: 24px;
 }
 
-/* Product links */
+/* The product links showcasing all 4 products we sell on the page, 
+all the list of the products will be on the product page*/
 .product-links {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -158,7 +160,8 @@ body {
     transform: scale(1.1);
 }
 
-/* Section Content */
+/* The section content is all about what we offer on our website, what is it about on our company,
+and what's so difference about our website, why you should buy our products */
 .section {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -189,7 +192,8 @@ body {
     font-weight: 200;
 }
 
-/* Contact */
+/* The contact page is the information about the website, this is where they 
+can contact the company or the person. */
 
 .phone-icon, .email-icon, .location-icon {
  font-size: 90px;
@@ -485,7 +489,7 @@ even they are in the same class, the problem is that I'm missing an end section 
 }
 
 
-/* Accreditation */
+/* The accreditation page is all about the business partnership and what companies we are partnered with. */
 .accreditation-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -521,7 +525,7 @@ even they are in the same class, the problem is that I'm missing an end section 
     text-align: center;
     color: #F79431;
 }
-/* Made the company section text align to the picture, and I also align every section of the page,
+/* Made the accreditation section text align to the picture, and I also align every section of the page,
 making sure it's perfectly aligned, And I also fix the problem of the text is not aligning properly
 even they are in the same class, the problem is that I'm missing an end section in my section 3 - 4  */
 .accreditation-text-content-1 {
