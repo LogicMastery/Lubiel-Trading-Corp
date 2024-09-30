@@ -147,6 +147,15 @@ all the list of the products will be on the product page*/
     margin: 20px 0;
 }
 
+.link-style {
+    text-decoration: none;
+    color: #F79431;
+}
+
+.link-style:hover {
+    color: #F79431;
+}
+
 .card-position {
     transform: translate(4%);
 }
@@ -589,7 +598,7 @@ footer .footer-container {
 
 footer {
     transform: translate(0, 45%)
-}
+} */
 
 footer .footer-container .sec h2 {
     position: relative;
@@ -686,17 +695,23 @@ footer .footer-container .sec p{
     font-weight: 200;
 }
 
+footer {
+    background: #000080;
+}
+
 .footer-logo {
     width: 95px;
     height: 95px;
+    transform: translate(210%);
 }
 
 .copyright-text {
+    position: absolute;
     width: 100%;
-    background: #000080;
-    padding: 8px 100px;
+    line-height: 10px;
     text-align: center;
-    color: #ffff;
+    bottom: 0;
+    transform: translate(-4%);
 }
 
 /* Responsive Design for mobile and tablet version */
