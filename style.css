@@ -437,10 +437,10 @@ can contact the company or the person. */
 
 /* Company Section */
 .company-section-1 {
-z-index: 2;
+transform: translate(-10%, 5%);
 }
 .company-section-2 {
-    z-index: 1;
+    transform: translate(-10%);
 }
 
 .company-image img {
